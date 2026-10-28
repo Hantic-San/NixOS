@@ -27,13 +27,18 @@
     enable = true;
     extraPackages = with pkgs; [
       intel-media-driver
-      intel-vaapi-driver
-      libva-vdpau-driver
-      libvdpau-va-gl
+      vpl-gpu-rt
+          intel-vaapi-driver
+    libva-vdpau-driver
+    libvdpau-va-gl
+
+      # Opcjonalnie, jeśli potrzebujesz VDPAU:
+      # libvdpau-va-gl
+      # libva-vdpau-driver
     ];
   };
 
   # Thermal and Noise Management
   services.thermald.enable = true;
-  services.throttled.enable = true;
+  #services.throttled.enable = true;
 }

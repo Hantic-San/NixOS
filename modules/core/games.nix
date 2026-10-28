@@ -17,10 +17,10 @@
   };
   environment.systemPackages = with pkgs; [
     lutris
-    heroic
-    stable.bottles
+    #heroic
+    #stable.bottles
     # ryujinx
-    # prismlauncher
+     prismlauncher
 
     steam-run
     wineWow64Packages.staging
@@ -69,11 +69,7 @@
         settings = {
           no_display = true; # Hide hud by default (Show by holding right-shift then press F12)
           fps_limit = [
-            60
             0
-            144
-            165
-            240
           ];
           fps_limit_method = "late"; # late = low input lag but less smooth, early = more smooth
           vsync = 2; # https://github.com/flightlessmango/MangoHud#vsync

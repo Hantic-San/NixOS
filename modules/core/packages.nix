@@ -41,7 +41,7 @@
     # cowsay # Great Fun Terminal Program
     # duf # Utility For Viewing Disk Usage In Terminal
     # dysk # Disk space util nice formattting
-    # ffmpeg # Terminal Video / Audio Editing
+     ffmpeg # Terminal Video / Audio Editing
     # gemini-cli # CLI AI client ONLY (optional)
     # glxinfo # needed for inxi diag util
     # inxi # CLI System Information Tool
@@ -59,10 +59,10 @@
     # picard # For Changing Music Metadata & Getting Cover Art
     # pkg-config # Wrapper Script For Allowing Packages To Get Info On Others
     # rhythmbox # audio player
-    # socat # Needed For Screenshots
+     socat # Needed For Screenshots
     # usbutils # Good Tools For USB Devices
     # uwsm # Universal Wayland Session Manager (optional must be enabled)
-    # v4l-utils # Used For Things Like OBS Virtual Camera
+     v4l-utils # Used For Things Like OBS Virtual Camera
     # warp-terminal # Terminal with AI support build in
     # waypaper # Change wallpaper
     # wget # Tool For Fetching Files With Links

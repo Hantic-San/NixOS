@@ -33,7 +33,7 @@ in
           bar.default = {
             enabled = true;
             auto_hide = false;
-            background_opacity = 1.0;
+            background_opacity = 0.75;
             thickness = 38;
             border = "outline";
             border_width = 0.5;
@@ -60,19 +60,21 @@ in
               "caffeine"
               "clock"
             ];
-            end = [
-              "weather"
-              "tray"
-              "keyboard_layout"
-              "clipboard"
-              "network"
-              "bluetooth"
-              "volume"
-              "brightness"
-              "notifications"
-              "battery"
-              "session"
-            ];
+end = [
+  "cpu"
+  "ram"
+  "weather"
+  "tray"
+  "keyboard_layout"
+  "clipboard"
+  "network"
+  "bluetooth"
+  "volume"
+  "brightness"
+  "notifications"
+  "battery"
+  "session"
+];
             dead_zone.actions = {
               back = "exec noctalia msg panel-toggle yuuto/calculator:panel";
             };
@@ -194,7 +196,45 @@ in
                 visible = true;
               };
             };
-          dock.size = 34;
+
+dock = {
+  enabled = true;
+  position = "bottom";
+
+  icon_size = 48;
+  item_spacing = 6;
+
+  main_axis_padding = 16;
+  cross_axis_padding = 8;
+
+  background_opacity = 0.75;
+  radius = 16;
+  shadow = true;
+
+  margin_ends = 0;
+  margin_edge = 8;
+
+  show_running = true;
+  show_dots = true;
+  show_instance_count = true;
+
+  auto_hide = true;
+  reserve_space = false;
+
+  layer = "top";
+
+  magnification = true;
+  magnification_scale = 1.45;
+  active_scale = 1.0;
+  inactive_scale = 0.85;
+
+  active_opacity = 1.0;
+  inactive_opacity = 0.85;
+
+  launcher_position = "start";
+  launcher_icon = "grid-dots";
+};
+
           idle = {
             behavior_order = [
               "lock"
